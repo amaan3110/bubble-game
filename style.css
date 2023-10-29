@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #cedfdf;
+}
+
+#pannel{
+    width: 75%;
+    height: 83%;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#ptop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #b7d1d3;
+    gap: 5vw;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.box{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+#b-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+h2{
+    padding-top: 20%;
+}
+
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8fb8ca;
+    font-size: 1.3vw;
+    margin: 5px;
+    font-weight: 500;
+    transition: all 0.3;
+}
+
+.bubble:hover{
+    background-color: #b7d1d3;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    #main{
+        width: 100%;
+    }
+
+    #pannel{
+        width: 90%;
+        overflow: auto;
+    }
+
+    #b-cont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 7px;
+    }
+
+    h2{
+        padding-top: 70%;
+    }
+
+    .elem{
+        gap: 7px;
+    }
+
+    .bubble{
+        font-size: 4vw;
+    }
+
+    #ptop{
+        position: fixed;
+        width: 90%;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+
+}
